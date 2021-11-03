@@ -13,7 +13,6 @@ function palindrome(str) {
     return myStr === reverseString(myStr);
 }
 
-
 //console.log(palindrome("0_0 (: /-\ :) 0-0"));
 
 export { palindrome };
