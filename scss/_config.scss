@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+$primary-color: #F5EFED;
+$secondary-color: #0F0A0A;
+$third-color: #2292A4;
+
+$robotoFont: 'Roboto', sans-serif;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $robotoFont;
+}
