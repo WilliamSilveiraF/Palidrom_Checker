@@ -2,8 +2,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -33,10 +33,103 @@ body {
 }
 
 .mainBox {
-  background-color: #F5EFED;
+  background-color: white;
   border-radius: 16px;
   height: 50vh;
   width: 95%;
-  border: 2px solid hotpink;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 42.5% 52.5%;
+      grid-template-rows: 42.5% 52.5%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainBox__callToAction {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+}
+
+.mainBox__callToAction h6 {
+  font-size: 7rem;
+}
+
+.mainBox__callToAction h1 {
+  font-size: 2.25rem;
+}
+
+.mainBox__checkThePalidrome {
+  justify-self: center;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainBox__checkThePalidrome--PutSentence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.mainBox__checkThePalidrome--PutSentence input, .mainBox__checkThePalidrome--PutSentence button {
+  height: 5vh;
+  font-size: 1.4rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+}
+
+.mainBox__checkThePalidrome--PutSentence input {
+  padding-left: 0.75rem;
+  width: 70%;
+  border-bottom: 3px solid #2292A4;
+  background: none;
+}
+
+.mainBox__checkThePalidrome--PutSentence button {
+  width: 25%;
+  background: #2292A4;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.mainBox__checkThePalidrome p {
+  margin-top: 1.5rem;
+  color: #2292A4;
+  opacity: 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
 }
 /*# sourceMappingURL=main.css.map */

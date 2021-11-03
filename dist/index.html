@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/main.css">
+    <script src="https://kit.fontawesome.com/204908ccdd.js"></script>
+    <script type="module" src="/dist/js/main.js"></script>
+    <script type="module" src="/dist/js/palindromeChecker.js"></script>
+
     <title>Palindrome Checker</title>
 </head>
 <body>
     <main class="main">
         <section class="mainBox">
             <div class="mainBox__callToAction">
-                <h6></h6>
-                <h1></h1>
-                <p>Check if your setence is palindrome</p>
+                <h6><i class="fas fa-check-circle"></i></h6>
+                <h1>Palindrome Checker</h1>
+                
             </div>
-            <div class="mainBox__checkThePalidrom"></div>
+            <form class="mainBox__checkThePalidrome">
+                <div class="mainBox__checkThePalidrome--PutSentence">
+                    <input type="text" placeholder="Put the sentence">
+                    <button>Check</button>
+                </div>
+                <p>Check if your sentence is palindrome</p>
+            </form>
         </section>
     </main>
+    <footer><a href="https://www.linkedin.com/in/williamsilveiraf/">&copy; williamsilveiraf</a></footer>
 </body>
+
 </html>
