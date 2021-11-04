@@ -57,6 +57,7 @@ body {
 }
 
 .mainBox__callToAction h6 {
+  display: hidden;
   font-size: 7rem;
 }
 
@@ -119,7 +120,9 @@ body {
   color: #2292A4;
   opacity: 1;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 footer {
