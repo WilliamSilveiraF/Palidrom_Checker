@@ -1,0 +1,78 @@
+@include media-sm {
+    html {
+        font-size: 90%
+    }
+    .main {
+        &Box {
+            height: 75vh;
+        }
+    }
+    
+}
+@include media-md {
+    html {
+        font-size: 125%;
+    }
+    .main {
+        &Box {
+            max-width: 1520px;
+            height: 75vh;
+            grid-template-rows: 50% 45%;
+            &__callToAction {
+                h6 {
+                    font-size: 8rem;
+                }
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            &__checkThePalidrome {
+                &--PutSentence {
+                    input, button {
+                        height: 8vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-lg {
+    html {
+        font-size: 130%;
+    }
+
+    .main {
+        &Box {
+            height: 77.5vh;
+            &__checkThePalidrome {
+                &--PutSentence {
+                    input, button {
+                        height: 10vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-xl {
+    html {
+        font-size: 160%;
+    }
+
+    .main {
+        &Box {
+            height: 85vh;
+            &__checkThePalidrome {
+                &--PutSentence {
+                    input, button {
+                        height: 10vh;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        bottom: 0.4rem;
+    }
+}

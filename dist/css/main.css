@@ -7,6 +7,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/*resposive @import no fim do arquivo*/
 body {
   background-color: #2292A4;
   display: -webkit-box;
@@ -18,7 +19,6 @@ body {
 }
 
 .main {
-  border: 2px solid yellow;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -134,5 +134,62 @@ footer a {
   color: white;
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 90%;
+  }
+  .mainBox {
+    height: 75vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 125%;
+  }
+  .mainBox {
+    max-width: 1520px;
+    height: 75vh;
+    -ms-grid-rows: 50% 45%;
+        grid-template-rows: 50% 45%;
+  }
+  .mainBox__callToAction h6 {
+    font-size: 8rem;
+  }
+  .mainBox__callToAction h1 {
+    font-size: 3rem;
+  }
+  .mainBox__checkThePalidrome--PutSentence input, .mainBox__checkThePalidrome--PutSentence button {
+    height: 8vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 130%;
+  }
+  .mainBox {
+    height: 77.5vh;
+  }
+  .mainBox__checkThePalidrome--PutSentence input, .mainBox__checkThePalidrome--PutSentence button {
+    height: 10vh;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 160%;
+  }
+  .mainBox {
+    height: 85vh;
+  }
+  .mainBox__checkThePalidrome--PutSentence input, .mainBox__checkThePalidrome--PutSentence button {
+    height: 10vh;
+  }
+  footer {
+    bottom: 0.4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

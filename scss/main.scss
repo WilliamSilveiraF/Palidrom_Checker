@@ -1,13 +1,14 @@
 @import 'config';
+/*resposive @import no fim do arquivo*/
+
 
 body {
     background-color: $third-color;
     display: flex;
     justify-content: center;
-    
 }
+
 .main {
-    border: 2px solid yellow;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -95,3 +96,5 @@ footer {
         font-size: 1.25rem;
     }
 }
+
+@import 'responsive';
